@@ -13,8 +13,8 @@ body {
     text-align: center;
     width: 250px;
     height: 100vh;
-    background: rgba(0, 0, 0, 0.8);
-    color: white;
+    background: rgba(255, 255, 255, 0.8);
+    color: #087abe;
     padding: 20px;
     position: fixed;
     left: 0;
@@ -22,6 +22,9 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+    /* border-right: 2px solid #087abe; */
+    /* background: linear-gradient(to bottom, white, #f0f0f0); */
 }
 
 .icon{
@@ -29,7 +32,7 @@ body {
     float: left;
 }
 .logo {
-    width: 200px;  
+    width: 230px;  
 }
 .logo-container{
     display: flex;
@@ -61,7 +64,7 @@ h4 {
      font-family: serif;
 }
 .container {
-    display:flex ;
+    display:flex;
     gap: 40px; 
     width: 100%; 
     max-width: 400px;
@@ -73,8 +76,8 @@ h4 {
 .button {
     display: block;
     text-decoration: none;
-    background: #f39c12;
-    color: rgb(10, 0, 0);
+    background: #087abe;
+    color: rgb(255, 255, 255);
     font-weight: bold;
     padding: 10px;
     text-align: center;
@@ -82,13 +85,13 @@ h4 {
     transition: 0.3s;
 }
 .button:hover {
-    background-color:#fc9b2500;
-    color: white;
+    background-color:#ffffff;
+    color: #087abe;
 } 
 footer {
     text-align: center;
     padding: 10px;
-    background-color: #fc9b25;
+    background-color: #087abe;
     color: white;
     position: fixed;
     bottom: 0;
@@ -112,25 +115,14 @@ footer {
     color: rgb(0, 0, 0);
 
     position: relative;
-    /* display: flex; */
-    /* flex-direction: column; */
-    /* align-items: center; */
     justify-content: center;
     
-/* .logo-container {
-    font-size: 6rem;
-    font-weight: 800;
-    letter-spacing: 0px;
-    text-transform: uppercase;
-    text-align: center;
-    /* font-style:oblique; */
 } 
 
 .header h4 {
     width: 800px;
     font-size: 20px;
     margin-top: 10px;
-    /* opacity: 0; */
 }
  .header h2{
     font-size: 2rem;
@@ -139,9 +131,6 @@ footer {
     font-weight: 400;
     letter-spacing: 25px;
     text-align: center;
-    /* padding-left: 50px; */
-    /* padding-top: 70px; */
-    /* opacity: 0; */
 }
 
 .bodycontent {
@@ -172,16 +161,15 @@ footer {
     gap: 40px;
     width: 1000px;
     display: flex;
-    flex-wrap: wrap; /* Ensures wrapping on smaller screens */
-    justify-content:left; /* Centers the cards */
+    flex-wrap: wrap; 
+    justify-content:left; 
     margin-bottom: 30px;
 }
 
 .subhead ul li {
-    width: 200px; /* Set card width */
-    height: 150px; /* Set card height */
-    /* background: url('./img/card-bg.jpg') no-repeat center center; Add your background image */
-    background-size: cover;
+    width: 200px;
+    height: 150px; 
+   background-size: cover;
     border-radius: 10px;
     display: flex;
     align-items: center;
@@ -200,19 +188,18 @@ footer {
         font-size: large;
         font-weight: bold;
         text-decoration: none;
-        background: rgba(0, 0, 0, 0.5); /* Dark overlay for better text readability */
+        background: rgba(0, 0, 0, 0.5);
         border-radius: 10px;
         display: flex;
         align-items: center;
         justify-content: center;
     }
     .subhead ul li:hover {
-        transform: scale(1.05); /* Slight zoom effect */
+        transform: scale(1.05);
         box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
     }
     #mainContent {
         text-align: center;
-        /* opacity: 0;  */
     }
     #mainContent-1 {
         text-align: center;
@@ -232,7 +219,7 @@ footer {
           opacity: 0;
         }
         100% {
-          width: 400px; /* Final size */
+          width: 400px;
           filter: blur(0);
           opacity: 1;
         }
